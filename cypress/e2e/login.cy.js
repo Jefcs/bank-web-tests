@@ -1,8 +1,9 @@
 describe('Login', () => {
-  it('Login with valid data', () => {
-    // Arrange
+  beforeEach(() => {
     cy.visit('http://localhost:4000')
+  })
 
+  it('Login with valid data', () => {
     // Act
     cy.get('#username').click().type('julio.lima')
     cy.get('#senha').click().type('123456')
@@ -13,9 +14,6 @@ describe('Login', () => {
   })
 
   it.only('Login with invalid data', () => {
-    // Arrange
-    cy.visit('http://localhost:4000')
-
     // Act
     cy.get('#username').click().type('julio.lima')
     cy.get('#senha').click().type('23145')

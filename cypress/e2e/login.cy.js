@@ -1,6 +1,6 @@
 describe('Login', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('URL'))
+    cy.visit('/')
   })
 
   it('Login with valid data', () => {

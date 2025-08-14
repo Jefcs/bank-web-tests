@@ -5,7 +5,7 @@ describe('Transfers', () => {
   })
 
   it('should perform a transfer successfully', () => {
-    cy.makeTransfer(
+    cy.doTransfer(
       'João da Silva com saldo de',
       'Maria Oliveira com saldo de',
       '100'
@@ -14,7 +14,7 @@ describe('Transfers', () => {
   })
 
   it('should display error when trying to transfer more than 5k without token', () => {
-    cy.makeTransfer(
+    cy.doTransfer(
       'João da Silva com saldo de',
       'Maria Oliveira com saldo de',
       '5001'

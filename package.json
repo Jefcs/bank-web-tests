@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Jefcs/bank-web-tests#readme",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.5.4"
+    "cypress": "^14.5.4",
+    "cypress-mochawesome-reporter": "^4.0.0"
   }
 }
